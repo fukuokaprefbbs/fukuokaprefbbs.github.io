@@ -14,13 +14,23 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# 除外ファイル
+# 除外ファイル・ディレクトリ
 exclude:
   - Gemfile
   - Gemfile.lock
   - .git
   - .github
   - README.md
+  - vendor
+  - node_modules
+  - .bundle
+  - .jekyll-cache
+  - _site
+
+# インクルードファイル・ディレクトリ
+include:
+  - _pages
+  - _posts
 
 # デフォルト設定
 defaults:

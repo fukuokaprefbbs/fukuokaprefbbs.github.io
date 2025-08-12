@@ -43,6 +43,12 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Clean up vendor directory
+        run: |
+          rm -rf vendor/
+          rm -rf .bundle/
+          rm -rf .jekyll-cache/
+
       - name: Build with Jekyll
         run: bundle exec jekyll build
         env:
