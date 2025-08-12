@@ -3,7 +3,7 @@ description: "BBSとは'Big Brothers and Sisters'の略称です。少年（少�
 tagline: "あたたかい心で、ともだち活動を。"
 url: "https://fukuokaprefbbs.github.io"
 email: "fukuokaprefbbs@gmail.com"
-phone: "0927616736"
+phone: "092-761-6736"
 
 # 組織情報
 organization:
@@ -41,7 +41,7 @@ activities:
   
   - title: "広報・啓発活動"
     description: "地域社会へBBS活動の重要性を伝え、理解を深めてもらうための活動です。"
-    icon: "bi-handshake-fill"
+    icon: "bi-megaphone-fill"
     color: "success"
   
   - title: "研修・学習活動"
