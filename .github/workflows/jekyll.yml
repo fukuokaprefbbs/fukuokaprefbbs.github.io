@@ -41,35 +41,26 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: false
-
-      - name: Install Bundler
-        run: gem install bundler
 
       - name: Install dependencies
         run: |
+          gem install bundler
           bundle config set --local path 'vendor/bundle'
-          bundle install
+          bundle install --jobs 4 --retry 3
 
-      - name: Verify Jekyll installation
+      - name: Debug bundle info
         run: |
+          bundle info
+          bundle list
           bundle exec jekyll --version
-          bundle list | grep jekyll
 
-      - name: Clean up vendor directory
-        run: |
-          rm -rf vendor/
-          rm -rf .bundle/
-          rm -rf .jekyll-cache/
-
-      - name: Build with Jekyll
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
+      - name: Build site
+        run: bundle exec jekyll build --destination ./_site
 
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
 
   # Deployment job
   deploy:
