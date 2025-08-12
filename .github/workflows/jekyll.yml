@@ -41,10 +41,20 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true
+          bundler-cache: false
+
+      - name: Install Bundler
+        run: gem install bundler
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          bundle config set --local path 'vendor/bundle'
+          bundle install
+
+      - name: Verify Jekyll installation
+        run: |
+          bundle exec jekyll --version
+          bundle list | grep jekyll
 
       - name: Clean up vendor directory
         run: |
