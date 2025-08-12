@@ -20,10 +20,25 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# プラグイン（必要最小限）
+# プラグイ
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-assets
+
+# アセット管理設定
+assets:
+  compress:
+    css: true
+    js: true
+  cachebust: hard
+  gzip: false
+  digest: true
+  prefix: "/assets"
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/images
 
 # 除外ファイル・ディレクトリ
 exclude:
