@@ -43,6 +43,9 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Install dependencies
+        run: bundle install
+
       - name: Clean up vendor directory
         run: |
           rm -rf vendor/
