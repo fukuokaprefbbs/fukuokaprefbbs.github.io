@@ -1,0 +1,45 @@
+<section id="activities" class="section-padding bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5 fw-bold text-dark-blue fade-in-up" id="福岡BBSの活動">福岡BBSの活動</h2>
+                <p class="lead text-muted mt-3 fade-in-up" style="animation-delay: 0.2s;">
+                    私たちが行っている3つの主要な活動をご紹介します
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            {% for activity in site.data.site.activities %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm card-hover fade-in-up" style="animation-delay: {{ forloop.index | times: 0.1 }}s;">
+                    <div class="card-body text-center p-4">
+                        <div class="display-1 text-light-blue mb-3">
+                            <i class="bi {{ activity.icon }}"></i>
+                        </div>
+                        <h3 class="h4 fw-semibold mb-3" id="{{ activity.title | slugify }}">{{ activity.title }}</h3>
+                        <p class="text-muted mb-0">
+                            {{ activity.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <div class="bg-white rounded-3 p-4 shadow-sm fade-in-up" style="animation-delay: 0.6s;">
+                    <h4 class="fw-semibold mb-3">活動に参加しませんか？</h4>
+                    <p class="text-muted mb-4">
+                        私たちと一緒に、若者たちの未来を支える活動に参加しませんか？<br>
+                        経験や年齢は問いません。大切なのは「寄り添う心」です。
+                    </p>
+                    <a href="#contact" class="btn btn-custom">
+                        <i class="bi bi-envelope-fill me-2"></i>お問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

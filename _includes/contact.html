@@ -1,0 +1,84 @@
+<section id="contact" class="section-padding bg-white">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5 fw-bold text-dark-blue fade-in-up" id="所在地地区会等SNS">所在地・地区会等SNS</h2>
+                <p class="lead text-muted mt-3 fade-in-up" style="animation-delay: 0.2s;">
+                    お気軽にお問い合わせください
+                </p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-sm fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="card-body p-5">
+                        <div class="row g-5">
+                            <div class="col-md-6">
+                                <h3 class="h5 fw-semibold mb-3" id="所在地">
+                                    <i class="bi bi-geo-alt-fill text-primary me-2"></i>所在地
+                                </h3>
+                                <div class="text-muted">
+                                    <p class="fw-semibold mb-2">{{ site.data.site.address.organization }}</p>
+                                    <address class="mb-0">
+                                        〒{{ site.data.site.address.postal_code }}<br>
+                                        {{ site.data.site.address.prefecture }}{{ site.data.site.address.city }}<br>
+                                        {{ site.data.site.address.street }}<br>
+                                        {{ site.data.site.address.building }}
+                                    </address>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <h5 class="fw-semibold mb-2">アクセス</h5>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="bi bi-train-front me-2"></i>地下鉄七隈線「六本松」駅から徒歩5分</li>
+                                        <li><i class="bi bi-bus-front me-2"></i>西鉄バス「六本松」バス停から徒歩3分</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h3 class="h5 fw-semibold mb-3" id="地区会等SNS">
+                                    <i class="bi bi-link-45deg text-primary me-2"></i>地区会等SNS
+                                </h3>
+                                <div class="mb-4">
+                                    <p class="text-muted mb-3">各地域のBBS会の活動状況や最新情報をご確認いただけます。</p>
+                                    <ul class="list-unstyled">
+                                        {% for group in site.data.site.regional_groups %}
+                                        <li class="mb-3">
+                                            <a href="{{ group.url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                <div class="d-flex align-items-center p-3 bg-light rounded-3 hover-shadow">
+                                                    <i class="bi {{ group.icon }} text-primary fs-4 me-3"></i>
+                                                    <div>
+                                                        <div class="fw-semibold text-dark">{{ group.name }}</div>
+                                                        <small class="text-muted">{{ group.platform }}</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <h5 class="fw-semibold mb-2">お問い合わせ</h5>
+                                    <p class="text-muted mb-3">
+                                        活動への参加やご質問など、お気軽にお問い合わせください。
+                                    </p>
+                                    <div class="d-grid gap-2">
+                                        <a href="mailto:{{ site.data.site.email }}" class="btn btn-outline-primary">
+                                            <i class="bi bi-envelope-fill me-2"></i>メールでお問い合わせ
+                                        </a>
+                                        <a href="tel:{{ site.data.site.phone }}" class="btn btn-outline-success">
+                                            <i class="bi bi-telephone-fill me-2"></i>お電話でお問い合わせ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
