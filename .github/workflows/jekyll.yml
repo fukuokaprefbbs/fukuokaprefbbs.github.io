@@ -42,6 +42,12 @@ jobs:
         with:
           ruby-version: '3.2'
 
+      - name: Clear old cache
+        run: |
+          rm -rf vendor/
+          rm -f Gemfile.lock
+          echo "Old cache cleared successfully"
+
       - name: Install dependencies
         run: |
           gem install bundler
