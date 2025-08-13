@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ '/' | relative_url }}">
                 <i class="bi bi-people-fill me-2"></i>
                 福岡県BBS連盟
             </a>
@@ -42,6 +42,8 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    {% if page.url == '/' or page.url == '/index.html' %}
+                    <!-- トップページでのみ表示するメニュー -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">BBSとは</a>
                     </li>
@@ -51,6 +53,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">所在地・地区会等SNS</a>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
