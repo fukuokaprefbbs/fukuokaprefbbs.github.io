@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="container mt-5 pt-4">
+    <div class="row">
+        <div class="col-12">
+            <!-- 戻りリンク -->
+            <div class="text-end mb-4">
+                <a href="{{ '/' | relative_url }}" class="btn btn-outline-primary back-button">
+                    <i class="bi bi-house-door me-2"></i>トップページに戻る
+                </a>
+            </div>
+            
+            <!-- ページタイトル -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-primary">{{ page.title }}</h1>
+                {% if page.description %}
+                <p class="lead text-muted">{{ page.description }}</p>
+                {% endif %}
+            </div>
+            
+            <!-- ページコンテンツ -->
+            <div class="bg-white p-4 rounded shadow-sm content-wrapper">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
