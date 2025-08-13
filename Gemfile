@@ -2,13 +2,13 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.4.1"
 
-gem "kramdown", "~> 2.4.0"
+gem "kramdown", "~> 2.5.1"
 gem "kramdown-parser-gfm", "~> 1.1.0"
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "webrick", "~> 1.8"
+  gem "webrick", "~> 1.9.1"
 end
 
 # Windows環境での動作確認用
