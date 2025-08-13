@@ -1,38 +1,26 @@
 ---
 ---
 
-// カスタム変数
+// 変数定義
 $primary-color: #0d6efd;
 $secondary-color: #2E8BC9;
 $dark-blue: #212836;
 
-// 基本的なフォント設定
-body {
-    font-family: 'Noto Sans JP', sans-serif;
+// 共通スタイル
+body { font-family: 'Noto Sans JP', sans-serif; }
+
+// ユーティリティクラス
+.section-padding { padding: 4rem 0; }
+.bg-dark-blue { background-color: $dark-blue !important; }
+.text-light-blue { color: $secondary-color !important; }
+
+// セクション固有スタイル
+.hero-section { 
+    background: $primary-color; 
+    padding: 7rem 0 5rem 0; 
 }
 
-// タイトルセクション
-.hero-section {
-    background: $primary-color;
-    padding: 7rem 0 5rem 0;
-}
-
-// セクションの標準余白
-.section-padding {
-    padding: 4rem 0;
-}
-
-// カスタムカラー
-.bg-dark-blue {
-    background-color: $dark-blue !important;
-}
-
-.text-light-blue {
-    color: $secondary-color !important;
-}
-
-// フッター
-footer {
-    background: $dark-blue;
-    padding: 3rem 0;
+footer { 
+    background: $dark-blue; 
+    padding: 3rem 0; 
 }
