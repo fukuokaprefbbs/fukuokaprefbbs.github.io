@@ -15,6 +15,6 @@ sitemap: false
 このページには以下のURLでアクセスできる。
 
 - `https://fukuokaprefbbs.github.io/sample/`
-  - ベースURL: `https://fukuokaprefbbs.github.io`
-  - ページパス: `/sample/`
-    - `_config.yml`の`permalink: "/:basename/"`設定により、ファイル名から拡張子を除いたパスが生成される
+  - `_pages`フォルダに置いたファイルは自動的にウェブページになる
+  - ファイル名（拡張子`.md`を除く）がそのままURLの一部になる
+  - `https://fukuokaprefbbs.github.io/ファイル名/` の形式
