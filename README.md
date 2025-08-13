@@ -4,15 +4,16 @@
 
 ```
 fukuokaprefbbs.github.io/
-├── _config.yml              # Jekyll設定
-├── _layouts/                # レイアウトテンプレート
-├── _includes/               # セクション別に分割したHTMLパーツ
-├── _pages/                  # 個別ページ
-├── _data/                   # サイト情報・活動内容・連絡先などの設定データ
-├── assets/                  # 素材ファイル
 ├── .github/                 # GitHub設定
-├── index.html               # トップページ
-└── Gemfile                  # Ruby依存関係
+├── _data/                   # サイト情報・活動内容・連絡先などの設定データ
+├── _includes/               # セクション別に分割したHTMLパーツ
+├── _layouts/                # レイアウトテンプレート
+├── _pages/                  # 個別ページ
+├── assets/                  # 素材ファイル
+├── Gemfile                  # Ruby依存関係
+├── README.md                # プロジェクト説明
+├── _config.yml              # Jekyll設定
+└── index.html               # トップページ
 ```
 
 ## 動作確認方法
