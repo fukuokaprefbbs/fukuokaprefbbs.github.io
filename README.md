@@ -4,14 +4,15 @@
 
 ```
 fukuokaprefbbs.github.io/
-├── .github/                 # GitHub設定
-├── _data/                   # サイト情報・活動内容・連絡先などの設定データ
+├── .github/                 # GitHubのWorkflow設定
+├── _data/                   # ホームページ情報・活動内容・連絡先などの設定データ
 ├── _includes/               # セクション別に分割したHTMLパーツ
 ├── _layouts/                # レイアウトテンプレート
 ├── _pages/                  # 個別ページ
 ├── assets/                  # 素材ファイル
+├── .gitignore               # Git管理対象外ファイルの設定
 ├── Gemfile                  # Ruby依存関係
-├── README.md                # プロジェクト説明
+├── README.md                # 本ファイル
 ├── _config.yml              # Jekyll設定
 └── index.html               # トップページ
 ```
