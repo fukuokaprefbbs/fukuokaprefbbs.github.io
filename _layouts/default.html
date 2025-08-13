@@ -7,7 +7,7 @@
     <meta name="description" content="{{ page.description | default: site.data.site.description }}">
     <meta name="keywords" content="{{ site.data.site.meta.keywords }}">
     <meta name="author" content="{{ site.data.site.meta.author }}">
-    <meta name="robots" content="{{ site.data.site.meta.robots }}">
+    <meta name="robots" content="{% if page.noindex %}noindex, nofollow{% else %}{{ site.data.site.meta.robots }}{% endif %}">
     
     <meta name="google-site-verification" content="bGRh3AQylAu0TzD9RO1kru_JUeTfh0JPJCvaDN2duw0" />
     

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: サンプルページ
+noindex: true
+sitemap: false
 ---
 
 ## 本文
