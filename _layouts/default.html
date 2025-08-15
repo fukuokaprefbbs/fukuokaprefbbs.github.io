@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - {{ site.data.site.title }}{% else %}{{ site.data.site.title }}{% endif %}</title>
-    <meta name="description" content="{{ page.description | default: site.data.site.description }}">
-    <meta name="keywords" content="{{ site.data.site.meta.keywords }}">
-    <meta name="author" content="{{ site.data.site.meta.author }}">
-    <meta name="robots" content="{% if page.noindex %}noindex, nofollow{% else %}{{ site.data.site.meta.robots }}{% endif %}">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="keywords" content="{{ site.data.meta.keywords }}">
+    <meta name="author" content="{{ site.data.meta.author }}">
+    <meta name="robots" content="{% if page.noindex %}noindex, nofollow{% else %}{{ site.data.meta.robots }}{% endif %}">
     
     <meta name="google-site-verification" content="bGRh3AQylAu0TzD9RO1kru_JUeTfh0JPJCvaDN2duw0" />
     
@@ -72,7 +72,7 @@
     </footer>
 
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
     <!-- Smooth Scrolling -->
     <script>

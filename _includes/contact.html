@@ -17,12 +17,12 @@
                                     <i class="bi bi-geo-alt-fill text-primary me-2"></i>所在地
                                 </h3>
                                 <div class="text-muted">
-                                    <p class="fw-semibold mb-2">{{ site.data.site.address.organization }}</p>
+                                    <p class="fw-semibold mb-2">{{ site.data.contact.organization }}</p>
                                     <address class="mb-0">
-                                        〒{{ site.data.site.address.postal_code }}<br>
-                                        {{ site.data.site.address.prefecture }}{{ site.data.site.address.city }}
-                                        {{ site.data.site.address.street }}<br>
-                                        {{ site.data.site.address.building }}
+                                        〒{{ site.data.contact.postal_code }}<br>
+                                        {{ site.data.contact.prefecture }}{{ site.data.contact.city }}
+                                        {{ site.data.contact.street }}<br>
+                                        {{ site.data.contact.building }}
                                     </address>
                                 </div>
 
@@ -30,7 +30,7 @@
                                     <h5 class="fw-semibold mb-2">
                                         <i class="bi bi-telephone-fill text-primary me-2"></i>電話番号
                                     </h5>
-                                    <p class="fw-semibold mb-0 text-muted">{{ site.data.site.phone }}</p>
+                                    <p class="fw-semibold mb-0 text-muted">{{ site.data.contact.phone }}</p>
                                 </div>
                                 
                                 <div class="mt-4">
@@ -58,7 +58,7 @@
                                 <div class="mb-4">
                                     <p class="text-muted mb-3">各地域のBBS会の活動状況や最新情報をご確認いただけます。</p>
                                     <ul class="list-unstyled">
-                                        {% for group in site.data.site.regional_groups %}
+                                        {% for group in site.data.sns.list %}
                                         <li class="mb-3">
                                             <a href="{{ group.url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                                                 <div class="d-flex align-items-center p-3 bg-light rounded-3 hover-shadow">
@@ -78,10 +78,10 @@
                                     <h5 class="fw-semibold mb-2">お問い合わせ</h5>
                                     <p class="text-muted mb-3">活動への参加やご質問など、お気軽にお問い合わせください。</p>
                                     <div class="d-grid gap-2">
-                                        <a href="mailto:{{ site.data.site.email }}" class="btn btn-outline-primary">
+                                        <a href="mailto:{{ site.data.contact.email }}" class="btn btn-outline-primary">
                                             <i class="bi bi-envelope-fill me-2"></i>メールでお問い合わせ
                                         </a>
-                                        <a href="tel:{{ site.data.site.phone }}" class="btn btn-outline-success">
+                                        <a href="tel:{{ site.data.contact.phone }}" class="btn btn-outline-success">
                                             <i class="bi bi-telephone-fill me-2"></i>お電話でお問い合わせ
                                         </a>
                                     </div>

@@ -1,0 +1,22 @@
+# 地区会SNS情報（県内の各地域組織）
+list:
+  - name: "福岡市BBS会"
+    description: "福岡市エリアのBBS活動"
+    url: "https://twitter.com/Fukuokacitybbs"
+    platform: "X"
+    icon: "bi-twitter-x"
+    note: "福岡市エリアの地区会"
+  
+  - name: "九州大学BBS会"
+    description: "九州大学内のBBS活動"
+    url: "https://twitter.com/BBS_qdai"
+    platform: "X"
+    icon: "bi-twitter-x"
+    note: "九州大学内の学生組織"
+  
+  - name: "九州国際大学BBS会"
+    description: "九州国際大学内のBBS活動"
+    url: "https://twitter.com/kmatsumoto01"
+    platform: "X"
+    icon: "bi-twitter-x"
+    note: "九州国際大学内の学生組織"

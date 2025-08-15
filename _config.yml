@@ -1,9 +1,12 @@
-layout: default
-lang: ja
+# Jekyll基本設定
+title: "福岡県BBS連盟"
+description: "BBSとは'Big Brothers and Sisters'の略称です。少年（少女）が、良き兄や姉のような存在として、同じ世代の悩みを持ち、時には犯罪や非行に陥ってしまった少年少女たちを支援する活動です。"
+tagline: "あたたかい心で、ともだち活動を。"
 url: "https://fukuokaprefbbs.github.io"
 baseurl: ""
+lang: ja
+timezone: Asia/Tokyo
 
-# Jekyll設定
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
@@ -54,6 +57,3 @@ defaults:
       path: "_pages"
     values:
       permalink: "/:basename/"
-
-# タイムゾーン設定
-timezone: Asia/Tokyo

@@ -1,0 +1,16 @@
+# 活動内容
+list:
+  - title: "ともだち活動"
+    description: "少年少女と兄や姉のような立場で接し、共に悩み、考え、支え合う活動です。"
+    icon: "bi-people-fill"
+    color: "primary"
+
+  - title: "広報・啓発活動"
+    description: "地域社会へBBS活動の重要性を伝え、理解を深めてもらうための活動です。"
+    icon: "bi-megaphone-fill"
+    color: "success"
+
+  - title: "研修・学習活動"
+    description: "活動に必要な知識やスキルを習得し、会員同士の交流を深めます。"
+    icon: "bi-book-fill"
+    color: "info"
