@@ -54,12 +54,6 @@ jobs:
           bundle config set --local path 'vendor/bundle'
           bundle install --jobs 4 --retry 3
 
-      - name: Debug bundle info
-        run: |
-          bundle list
-          bundle exec jekyll --version
-          echo "Jekyll installation completed successfully"
-
       - name: Build site
         run: bundle exec jekyll build --destination ./_site
 
