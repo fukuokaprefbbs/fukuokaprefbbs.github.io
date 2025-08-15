@@ -8,19 +8,11 @@ lang: ja
 timezone: Asia/Tokyo
 
 markdown: kramdown
-highlighter: rouge
 permalink: pretty
 
 # Kramdown設定
 kramdown:
   input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
 # プラグイン
 plugins:
@@ -43,7 +35,6 @@ exclude:
 # インクルードファイル・ディレクトリ
 include:
   - _pages
-  - _posts
 
 # デフォルト設定
 defaults:
