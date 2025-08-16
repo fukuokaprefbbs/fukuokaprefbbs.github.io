@@ -24,3 +24,8 @@ footer {
     background: $dark-blue; 
     padding: 3rem 0; 
 }
+
+// スムーススクロール有効化
+html {
+    scroll-behavior: smooth;
+}

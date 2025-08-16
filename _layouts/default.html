@@ -71,25 +71,17 @@
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-   
-    <!-- Smooth Scrolling -->
+    
+    <!-- Mobile Navigation Auto-close -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const smoothScroll = (target) => {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                const targetPosition = target.offsetTop - navbarHeight;
-                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                history.pushState(null, null, target.getAttribute('id') ? '#' + target.getAttribute('id') : '');
-            };
-            
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) smoothScroll(target);
-                });
+        $(document).ready(function() {
+            $('.navbar-nav .nav-link').click(function() {
+                $('.navbar-collapse').collapse('hide');
             });
         });
     </script>
