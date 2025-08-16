@@ -33,6 +33,6 @@ bundle exec jekyll serve --livereload
 
 ### ページファイルの作成
 - `_pages/` ディレクトリにMarkdownファイル（`.md`）を作成する。
-- 詳細なサンプルは `_pages/sample-page.md` を参照。
+- 詳細なサンプルは `_pages/sample.md` を参照。
 
 
