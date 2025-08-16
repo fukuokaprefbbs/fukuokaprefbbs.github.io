@@ -2,15 +2,15 @@
 list:
   - name: "福岡市BBS会"
     url: "https://x.com/Fukuokacitybbs"
-    account: "@Fukuokacitybbs"
+    username: "Fukuokacitybbs"
     icon: "bi-twitter-x"
   
   - name: "九州大学BBS会"
     url: "https://x.com/BBS_qdai"
-    account: "@BBS_qdai"
+    username: "BBS_qdai"
     icon: "bi-twitter-x"
   
   - name: "九州国際大学BBS会"
     url: "https://x.com/kmatsumoto01"
-    account: "@kmatsumoto01"
+    username: "kmatsumoto01"
     icon: "bi-twitter-x"
